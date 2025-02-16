@@ -2,6 +2,8 @@ const express = require ("express")
 const router = require("./routes/router")
 const {getNetworkIpAddress }= require("./service/Network")
 const {initIO} = require("./service/Socket")
+const { files } = require("./db");
+
 
  const ipAddress = getNetworkIpAddress()
  console.log(ipAddress)
